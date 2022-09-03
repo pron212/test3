@@ -8,7 +8,7 @@ ADD ./main.go .
 
 FROM scratch
 WORKDIR /app
-COPY --from=0 /app/main .
+#COPY --from=0 /app/main .
 COPY ./public/index.html public/index.html
 COPY ./public/script.js public/script.js
 COPY ./public/style.css public/style.css
